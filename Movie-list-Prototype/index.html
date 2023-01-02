@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Film</title>
+</head>
+
+<body>
+    <div class="film-site-box w-100">
+        <video controls  class="w-100 video" autoplay loop muted >
+            <source src="kratos.mp4">
+        </video>
+        <div class="icons">
+            <i id="sound-mute" class="fa-solid fa-volume-xmark fs-1 mx-2 text-warning"></i>
+            <i id="list-hidden" class="fa-solid fa-display fs-1 mx-2 text-warning"></i>
+        </div>
+        <!-- <iframe id="yt-video" class="w-100 h-100" src="https://www.youtube.com/embed/1Je1bRHou5g" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe> -->
+
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="movie-box-top col-7 mx-auto p-3 rounded-4   ">
+                    <div class="row">
+                        <div class="col-lg-5 d-flex flex-column justify-content-center">
+                            <div class="row my-2">
+                                <div class="col-4 d-flex justify-content-center align-items-center  rounded-3">
+                                    <span class="text-white"> <u>Name</u> </span>
+                                </div>
+                                <div class="col-8">
+                                    <div class="input-group">
+                                        <input id="name" class="form-control bg-transparent " type="text" placeholder="NAME">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <div class="col-4 d-flex justify-content-center align-items-center  rounded-3">
+                                    <span class="text-white"><u>Director</u></span>
+                                    
+                                </div>
+                                <div class="col-8">
+                                    <div class="input-group">
+                                        <input id="director" class="form-control bg-transparent" type="text" placeholder="DIRECTOR">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-2 mx-auto ">
+                            <img class="img-fluid axe" src="../Movie-list-Prototype/src/assets/images/leviathan-axe.png" alt="">
+                        </div>
+
+                        <div class="col-lg-5 d-flex flex-column justify-content-center">
+                            <div class="row my-2">
+                                <div class="col-4 d-flex justify-content-center align-items-center rounded-3">
+                                    <span class="text-white"><u>Banner </u></span>
+                                </div>
+                                <div class="col-8">
+                                    <div class="input-group">
+                                        <input id="img-url" class="form-control bg-transparent" type="text" placeholder="BANNER">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row my-2 ">
+                                <div class="col-4 d-flex justify-content-center align-items-center  rounded-3">
+                                    <span class="text-white"><u>Release date</u></span>
+                                </div>
+                                <div class="col-8">
+                                    <div class="input-group ">
+                                        <input id="date" class="form-control bg-transparent text-white-50" type="date" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- alert tight here -->
+            <div class="row ">
+                <div class="col-2 col-lg-1 mx-auto mt-lg-3 kaos cursor-pointer">
+                    <img id="deleteAll" class="img-fluid " src="./src/assets/images/koas-bicaklari.png" alt="">
+                </div>
+            </div>
+           
+
+            <div class="row">
+                <div class="movie-box-bottom col-7 mx-auto p-3 rounded-4 ">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="img-fluid" src="./src/assets/images/raid.jpg" alt="">
+                        </div>
+                        <div class="col-7 text-white">
+                            <div class="row border-bottom">
+                                <!-- 1 -->
+                                <div class="col-4"><p>NAME</p></div>
+                                <div class="col-8 "> <p>The Raid</p> </div>
+                            </div>
+
+                            <div class="row border-bottom">
+                                <!-- 2 -->
+                                <div class="col-4">
+                                    <p>DIRECTOR</p> 
+                                </div>
+                                <div class="col-8">
+                                    <p >Gareth Evans</p>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom">
+                                <!-- 3 -->
+                                <div class="col-4">
+                                    <p>RELEASE DATE</p> 
+                                </div>
+                                <div class="col-8">
+                                    <p>04.04.2011</p>
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <!-- 4 -->
+                                <div class="col-4">
+                                    <p>MOVIE SUMMARY</p> 
+                                </div>
+                                <div class="col-8">
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolores!</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-2 d-flex flex-column justify-content-around  ">
+                            <button  class="delete btn btn-secondary w-100">Delete</button>
+                            <button  class="edit btn btn-success w-100 ">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- <script src="./js/deneme.js"></script> -->
+    <!-- <script src="./js/add.js"></script>
+    <script src="./js/events.js"></script> -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

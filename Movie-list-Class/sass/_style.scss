@@ -1,0 +1,72 @@
+$movie-add-font : 'Roboto Mono', monospace;
+
+
+
+body{
+    
+    overflow-y: hidden;
+    .film-site-box{
+        height: 100vh;
+        background-color: black;
+
+        .icons{
+            position: absolute;
+            top: 92%;
+            right: 2%; 
+            z-index: 2; 
+
+        }
+
+        .container-fluid{
+            height: 75vh;
+            position: absolute;
+            z-index: 2;
+            top: 5%;
+            
+            .row{
+                .movie-box-top{
+                   background-color: rgba(0, 0, 0, 0.8);
+                   font-family: $movie-add-font;
+                   font-weight: 400;
+                   font-size: 12px;
+                   img{
+                    cursor: pointer;
+                   }
+
+                   input{
+                    color: #fff;
+                    font-family: $movie-add-font;
+                   }
+                   
+                }
+
+                .kaos{
+                    cursor: pointer;
+                }
+
+                .movie-box-bottom{
+                    max-height: 47vh;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    overflow-y: scroll;
+                    scroll-behavior: smooth;  
+                }
+
+                .movie-box-bottom::-webkit-scrollbar {
+                    width: 1.2rem;
+                    background-color: transparent;
+                
+                }
+                .movie-box-bottom::-webkit-scrollbar-track{
+                    background-color: transparent;
+                }
+                .movie-box-bottom::-webkit-scrollbar-thumb {
+                    border-radius: 3rem;
+                    background-color: rgba(126, 214, 223, 0.4);
+                    
+                
+                }
+
+            }
+        }
+    }
+}
